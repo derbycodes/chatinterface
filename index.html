@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oldies Group Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN for demo purposes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 min-h-screen flex flex-col items-center justify-center">
+  <!-- iPhone-like container (adjusted size) -->
+  <div class="bg-white rounded-3xl shadow-2xl border-4 border-gray-300 w-[400px] max-w-full min-h-[100px] flex flex-col overflow-hidden">
+    <!-- Top bar: Time, WiFi, Battery -->
+    <div class="flex items-center justify-between px-4 pt-2 pb-1 bg-purple-100">
+      <!-- Time -->
+      <span class="text-xs font-semibold text-gray-700">09:41</span>
+      <!-- Right icons -->
+      <div class="flex items-center gap-2">
+        <!-- WiFi Icon -->
+        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12.55a11 11 0 0 1 14.08 0"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 20h.01"/>
+        </svg>
+        <!-- Battery Icon with percent -->
+        <div class="flex items-center gap-1">
+          <span class="text-xs text-gray-700">85%</span>
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="7" width="18" height="10" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
+            <rect x="4" y="9" width="14" height="6" rx="1" fill="currentColor"/>
+            <rect x="20" y="10" width="2" height="4" rx="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- Group Name with Profile Picture -->
+    <div class="flex items-center justify-between mb-2 bg-purple-100 py-2 px-2">
+      <!-- Left: Large deep purple greater than sign, Profile picture and group name -->
+      <div class="flex items-center gap-3">
+        <span 
+          class="flex items-center justify-center"
+          style="width: 56px; height: 56px;"
+        >
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 8L16 28L40 48" stroke="#6D28D9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <img src="GG.jpg" alt="Oldies Group" class="w-14 h-14 rounded-full border-2 border-purple-700 shadow">
+        <span class="text-xl font-bold text-purple-700 bg-white px-4 py-2 rounded-full shadow">
+          Oldies 👭👭
+        </span>
+      </div>
+      <!-- Right: Call and Video icons -->
+      <div class="flex items-center gap-2">
+        <!-- Voice Call Icon -->
+        <button class="p-1 rounded-full hover:bg-purple-200 focus:outline-none" title="Voice Call">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.05 5.05a7 7 0 0 1 0 13.9m-6.1-13.9a7 7 0 0 0 0 13.9M12 3v2m0 14v2m9-9h-2M5 12H3"/>
+          </svg>
+        </button>
+        <!-- Video Call Icon -->
+        <button class="p-1 rounded-full hover:bg-purple-200 focus:outline-none" title="Video Call">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0 1 21 8.618v6.764a1 1 0 0 1-1.447.894L15 14M5 7h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Chat Messages -->
+    <div class="flex-1 flex flex-col gap-4 px-4 pb-4 overflow-y-auto">
+      <!-- Cassie (received) -->
+      <div class="flex items-end gap-2">
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="d.jpg" alt="Cassie">
+        <div class="flex flex-col items-start">
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="text-xs font-semibold text-gray-700">Cassie 😍🥰</span>
+            <span class="text-xs text-gray-400">11:46</span>
+          </div>
+          <div class="bg-gray-100 text-gray-900 rounded-2xl rounded-bl-sm p-3 shadow max-w-xs">
+            <p class="text-sm">Heyyy guysss!!!! Its been long oo.I miss you guys</p>
+          </div>
+          <span class="text-xs text-gray-400 mt-1 flex items-center gap-1">
+            <svg class="w-4 h-4 text-gray-400 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M1.293 12.707a1 1 0 0 1 0-1.414l2.828-2.828a1 1 0 0 1 1.414 1.414L4.414 12l2.121 2.121a1 1 0 1 1-1.414 1.414l-2.828-2.828zm6.364 0a1 1 0 0 1 0-1.414l8.485-8.485a1 1 0 0 1 1.414 1.414L9.414 12l8.142 8.142a1 1 0 1 1-1.414 1.414l-8.485-8.485z"/></svg>
+            Received
+          </span>
+        </div>
+        <button class="inline-flex items-center p-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-2 focus:outline-none focus:ring-purple-300">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 4 15">
+            <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Debbie (sent by you, move to right) -->
+      <div class="flex items-end gap-2 justify-end">
+        <div class="flex flex-col items-end">
+          <div class="flex items-center space-x-2 mb-1 justify-end">
+            <span class="text-xs text-gray-400">11:47</span>
+            <span class="text-xs font-semibold text-purple-700">Debbie (You)</span>
+          </div>
+          <div class="bg-purple-100 text-gray-900 rounded-2xl rounded-br-sm p-3 shadow max-w-xs">
+            <p class="text-sm">Awwwnn, me too 😊. Hmm i wish we could meet and chill😢 </p>
+          </div>
+          <span class="text-xs text-gray-400 mt-1 flex items-center gap-1 justify-end">
+            <svg class="w-4 h-4 text-purple-400 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M1.293 12.707a1 1 0 0 1 0-1.414l2.828-2.828a1 1 0 0 1 1.414 1.414L4.414 12l2.121 2.121a1 1 0 1 1-1.414 1.414l-2.828-2.828zm6.364 0a1 1 0 0 1 0-1.414l8.485-8.485a1 1 0 0 1 1.414 1.414L9.414 12l8.142 8.142a1 1 0 1 1-1.414 1.414l-8.485-8.485z"/></svg>
+            Delivered
+          </span>
+        </div>
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="dd.jpeg" alt="Debbie">
+        <button class="inline-flex items-center p-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-2 focus:outline-none focus:ring-purple-300">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 4 15">
+            <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Katelyn (received) -->
+      <div class="flex items-end gap-2">
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="g.jpg" alt="Katelyn">
+        <div class="flex flex-col items-start">
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="text-xs font-semibold text-gray-700">Katelyn 😊😍</span>
+            <span class="text-xs text-gray-400">11:48</span>
+          </div>
+          <div class="bg-gray-100 text-gray-900 rounded-2xl rounded-bl-sm p-3 shadow max-w-xs">
+            <p class="text-sm">Me too buh the distance of our schools too is part😭😭.</p>
+          </div>
+          <span class="text-xs text-gray-400 mt-1 flex items-center gap-1">
+            <svg class="w-4 h-4 text-gray-400 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M1.293 12.707a1 1 0 0 1 0-1.414l2.828-2.828a1 1 0 0 1 1.414 1.414L4.414 12l2.121 2.121a1 1 0 1 1-1.414 1.414l-2.828-2.828zm6.364 0a1 1 0 0 1 0-1.414l8.485-8.485a1 1 0 0 1 1.414 1.414L9.414 12l8.142 8.142a1 1 0 1 1-1.414 1.414l-8.485-8.485z"/></svg>
+            Received
+          </span>
+        </div>
+        <button class="inline-flex items-center p-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-2 focus:outline-none focus:ring-purple-300">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 4 15">
+            <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Kiana (received) -->
+      <div class="flex items-end gap-2">
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="kk.jpg" alt="Kiana">
+        <div class="flex flex-col items-start">
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="text-xs font-semibold text-gray-700">Kiana 🔥🦋</span>
+            <span class="text-xs text-gray-400">11:49</span>
+          </div>
+          <div class="bg-gray-100 text-gray-900 rounded-2xl rounded-bl-sm p-3 shadow max-w-xs">
+            <p class="text-sm">Ikrrrrrrr. Chale eb3fa wai🔥 </p>
+          </div>
+          <span class="text-xs text-gray-400 mt-1 flex items-center gap-1">
+            <svg class="w-4 h-4 text-gray-400 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M1.293 12.707a1 1 0 0 1 0-1.414l2.828-2.828a1 1 0 0 1 1.414 1.414L4.414 12l2.121 2.121a1 1 0 1 1-1.414 1.414l-2.828-2.828zm6.364 0a1 1 0 0 1 0-1.414l8.485-8.485a1 1 0 0 1 1.414 1.414L9.414 12l8.142 8.142a1 1 0 1 1-1.414 1.414l-8.485-8.485z"/></svg>
+            Received
+          </span>
+        </div>
+        <button class="inline-flex items-center p-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-2 focus:outline-none focus:ring-purple-300">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 4 15">
+            <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Message input area (like iPhone) -->
+    <form class="bg-gray-100 px-4 py-3 flex items-center gap-2 border-t border-gray-200">
+      <label for="message" class="sr-only">Type a message</label>
+      <input id="message" type="text" placeholder="Message Oldies..." autocomplete="off" class="flex-1 rounded-full px-4 py-2 bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+      <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-4 py-2 font-semibold shadow">Send</button>
+    </form>
+  </div>
+</body>
+</html>
