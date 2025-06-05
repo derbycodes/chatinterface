@@ -35,33 +35,34 @@
     </div>
     <!-- Group Name with Profile Picture -->
     <div class="flex items-center justify-between mb-2 bg-purple-100 py-2 px-2">
-      <!-- Left: Large deep purple greater than sign, Profile picture and group name -->
-      <div class="flex items-center gap-3">
-        <span 
-          class="flex items-center justify-center"
-          style="width: 56px; height: 56px;"
-        >
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M40 8L16 28L40 48" stroke="#6D28D9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Left: Small deep purple greater than sign, smaller profile picture -->
+      <div class="flex items-center gap-2">
+        <span class="flex items-center justify-center" style="width: 32px; height: 32px;">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M24 4L8 16L24 28" stroke="#6D28D9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </span>
-        <img src="images/GG.jpg" alt="Oldies Group" class="w-14 h-14 rounded-full border-2 border-purple-700 shadow">
-        <span class="text-xl font-bold text-purple-700 bg-white px-4 py-2 rounded-full shadow">
+        <img src="GG.jpg" alt="Oldies Group" class="w-8 h-8 rounded-full border-2 border-purple-700 shadow">
+      </div>
+      <!-- Center: Oldies name -->
+      <div class="flex-1 flex justify-center">
+        <span class="text-lg font-bold text-purple-700 bg-white px-3 py-1 rounded-full shadow">
           Oldies 👭👭
         </span>
       </div>
       <!-- Right: Call and Video icons -->
-      <div class="flex items-center gap-2">
-        <!-- Voice Call Icon -->
+      <div class="flex items-center gap-3">
+        <!-- Voice Call Icon (Telephone Call Symbol) - Larger -->
         <button class="p-1 rounded-full hover:bg-purple-200 focus:outline-none" title="Voice Call">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.05 5.05a7 7 0 0 1 0 13.9m-6.1-13.9a7 7 0 0 0 0 13.9M12 3v2m0 14v2m9-9h-2M5 12H3"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 16.92v3a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.13 1.13.37 2.25.72 3.34a2 2 0 0 1-.45 2.11l-2.2 2.2a16 16 0 0 0 7.07 7.07l2.2-2.2a2 2 0 0 1 2.11-.45c1.09.35 2.21.59 3.34.72A2 2 0 0 1 22 16.92z"/>
           </svg>
         </button>
-        <!-- Video Call Icon -->
+        <!-- Video Call Icon - Larger -->
         <button class="p-1 rounded-full hover:bg-purple-200 focus:outline-none" title="Video Call">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0 1 21 8.618v6.764a1 1 0 0 1-1.447.894L15 14M5 7h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <rect x="3" y="7" width="13" height="10" rx="2" stroke-width="2"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 9l5 3-5 3V9z"/>
           </svg>
         </button>
       </div>
@@ -70,7 +71,7 @@
     <div class="flex-1 flex flex-col gap-4 px-4 pb-4 overflow-y-auto">
       <!-- Cassie (received) -->
       <div class="flex items-end gap-2">
-        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="images/d.jpg" alt="Cassie">
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="d.jpg" alt="Cassie">
         <div class="flex flex-col items-start">
           <div class="flex items-center space-x-2 mb-1">
             <span class="text-xs font-semibold text-gray-700">Cassie 😍🥰</span>
@@ -105,7 +106,7 @@
             Delivered
           </span>
         </div>
-        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="images/dd.jpeg" alt="Debbie">
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="dd.jpeg" alt="Debbie">
         <button class="inline-flex items-center p-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-2 focus:outline-none focus:ring-purple-300">
           <svg class="w-4 h-4 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 4 15">
             <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
@@ -114,7 +115,7 @@
       </div>
       <!-- Katelyn (received) -->
       <div class="flex items-end gap-2">
-        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="images/g.jpg" alt="Katelyn">
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="g.jpg" alt="Katelyn">
         <div class="flex flex-col items-start">
           <div class="flex items-center space-x-2 mb-1">
             <span class="text-xs font-semibold text-gray-700">Katelyn 😊😍</span>
@@ -136,7 +137,7 @@
       </div>
       <!-- Kiana (received) -->
       <div class="flex items-end gap-2">
-        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="images/kk.jpg" alt="Kiana">
+        <img class="w-8 h-8 rounded-full border-2 border-white shadow" src="kk.jpg" alt="Kiana">
         <div class="flex flex-col items-start">
           <div class="flex items-center space-x-2 mb-1">
             <span class="text-xs font-semibold text-gray-700">Kiana 🔥🦋</span>
@@ -161,7 +162,18 @@
     <form class="bg-gray-100 px-4 py-3 flex items-center gap-2 border-t border-gray-200">
       <label for="message" class="sr-only">Type a message</label>
       <input id="message" type="text" placeholder="Message Oldies..." autocomplete="off" class="flex-1 rounded-full px-4 py-2 bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400" />
-      <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-4 py-2 font-semibold shadow">Send</button>
+      <!-- Audio Icon (Microphone) -->
+      <button type="button" class="p-2 rounded-full hover:bg-purple-200 focus:outline-none" title="Send Audio">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19v2m0 0h3m-3 0H9m6-6a3 3 0 0 1-6 0V7a3 3 0 0 1 6 0v6z"/>
+        </svg>
+      </button>
+      <!-- Upward Arrow Send Icon (smaller) -->
+      <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white rounded-full p-1.5 font-semibold shadow" title="Send">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+      </button>
     </form>
   </div>
 </body>
